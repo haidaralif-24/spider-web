@@ -51,58 +51,11 @@ body {
   font-family: var(--font-body);
 }
 
-/*
- * Icons are rendered as inline SVG masks instead of a webfont.
- * This keeps the icons reliable even when the Material Symbols font
- * is unavailable or blocked by the browser/network.
- */
 .material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 450, 'GRAD' 0, 'opsz' 24;
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
-  font-size: 0;
-  width: 1em;
-  height: 1em;
-  flex-shrink: 0;
-  background-color: currentColor;
-  -webkit-mask: var(--icon-mask) center / contain no-repeat;
-  mask: var(--icon-mask) center / contain no-repeat;
-}
-
-.material-symbols-outlined[data-icon="science"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 3h6'/%3E%3Cpath d='M10 3v6.5L4.5 19a1 1 0 0 0 .9 1.5h13.2a1 1 0 0 0 .9-1.5L14 9.5V3'/%3E%3Cpath d='M7 16h10'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="lightbulb"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18h6'/%3E%3Cpath d='M10 22h4'/%3E%3Cpath d='M8.5 14.5A7 7 0 1 1 15.5 14.5c-.9.7-1.5 1.7-1.5 2.5h-4c0-.8-.6-1.8-1.5-2.5Z'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="eco"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 4C11 4 5 8 5 15c0 3 2 5 5 5 7 0 10-7 10-16Z'/%3E%3Cpath d='M4 21c3-5 7-8 12-10'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="toys"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='8'/%3E%3Cpath d='M4 12h16M12 4a12 12 0 0 1 0 16M12 4a12 12 0 0 0 0 16'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="cruelty_free"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cellipse cx='12' cy='14' rx='5.5' ry='6'/%3E%3Cellipse cx='8' cy='7' rx='2' ry='4' transform='rotate(-12 8 7)'/%3E%3Cellipse cx='16' cy='7' rx='2' ry='4' transform='rotate(12 16 7)'/%3E%3Ccircle cx='10' cy='13' r='.7' fill='black'/%3E%3Ccircle cx='14' cy='13' r='.7' fill='black'/%3E%3Cpath d='M11 16h2M12 15v3'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="filter_list"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M4 6h16M7 12h10M10 18h4'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="schedule"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="download"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12'/%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3Cpath d='M5 21h14'/%3E%3C/svg%3E");
-}
-
-.material-symbols-outlined[data-icon="school"] {
-  --icon-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 10 9-5 9 5-9 5-9-5Z'/%3E%3Cpath d='M7 12v5c3 2 7 2 10 0v-5'/%3E%3Cpath d='M21 10v6'/%3E%3C/svg%3E");
 }
 
 @keyframes webby-float {
@@ -130,4 +83,9 @@ body {
 
 .field-guide-card {
   box-shadow: 0 2px 0 #E2E8F0;
+}
+
+/* Removed educator / homeschool packs section from the page layout. */
+#educator-packs {
+  display: none;
 }
