@@ -121,9 +121,13 @@ export default function Home() {
 
              {/* Webby Lab-Notebook Speech Bubble */}
              <div className="relative bg-paper-cream border border-discovery-yellow/80 rounded-2xl rounded-tl-sm p-4 max-w-lg shadow-sm flex items-start gap-3.5">
-               <div className="w-10 h-10 rounded-xl bg-discovery-yellow/30 border border-discovery-yellow text-deep-charcoal flex items-center justify-center shrink-0" aria-hidden="true">
-                 <span className="material-symbols-outlined text-xl" data-icon="lightbulb">lightbulb</span>
-               </div>
+                <div className="w-10 h-10 rounded-xl bg-discovery-yellow/30 border border-discovery-yellow text-deep-charcoal flex items-center justify-center shrink-0" aria-hidden="true">
+                  <svg className="w-5 h-5 text-deep-charcoal" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M9 18h6" />
+                    <path d="M10 22h4" />
+                    <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z" />
+                  </svg>
+                </div>
                <div>
                  <div className="text-xs font-semibold text-deep-charcoal/80 mb-0.5">Catatan lab Webby</div>
                  <p className="text-sm font-normal text-charcoal-muted leading-snug">
