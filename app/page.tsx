@@ -167,7 +167,10 @@ export default function Home() {
 
                   {/* Webby magnifying glass badge */}
                   <div className="absolute -bottom-1 -right-1 w-9 h-9 rounded-full bg-fun-purple text-white flex items-center justify-center shadow-sm border-2 border-white" aria-hidden="true">
-                    <span className="material-symbols-outlined text-base" data-icon="search">search</span>
+                    <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8" />
+                      <path d="m21 21-4.35-4.35" />
+                    </svg>
                   </div>
 
                   {/* Playful small spider thread dangling down */}
