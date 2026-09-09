@@ -17,11 +17,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SpiderWeb · Explore · Experiment · Discover",
-  description: "Hands-on science experiments for curious minds, families, and classrooms. Guided step-by-step by Webby your science companion.",
+  title: "SpiderWeb · Jelajahi · Eksperimen · Temukan",
+  description: "Eksperimen sains langsung untuk pikiran penasaran, keluarga, dan kelas. Dibimbing langkah demi langkah oleh Webby pendamping sainsmu.",
   openGraph: {
-    title: "SpiderWeb · Explore · Experiment · Discover",
-    description: "Hands-on science experiments for curious minds, families, and classrooms.",
+    title: "SpiderWeb · Jelajahi · Eksperimen · Temukan",
+    description: "Eksperimen sains langsung untuk pikiran penasaran, keluarga, dan kelas.",
     type: "website",
   },
 };
@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
-    <html lang="en" className={`${fredoka.variable} ${inter.variable} h-full antialiased`}>
+    <html lang="id" className={`${fredoka.variable} ${inter.variable} h-full antialiased`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
